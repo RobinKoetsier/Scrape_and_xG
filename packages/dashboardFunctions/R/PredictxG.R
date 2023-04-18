@@ -25,7 +25,7 @@ PredictxG <- function(df_for_pred){
   print(dim(testm))
   test_matrix <- xgb.DMatrix(data = as.matrix(testm), label = labels)
   
-  bst_model2.0 <- xgb.load("~/Documents/R_with_git/Football/xgb.model")
+  bst_model2.0 <- xgb.load("xgb.model")
   p <- predict(bst_model2.0, newdata = test_matrix)
   pred <- matrix(p, nrow = nc, ncol = length(p)/nc) %>%
     t() %>%
