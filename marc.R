@@ -52,7 +52,7 @@ for(i in 1:length(filenames)){
     mutate(match =
              gsub(".json","",str_split_fixed(filenames[i], n=6,pattern = "/")[6])) %>%
     mutate(match =
-             gsub(".*_","",match)) 
+             gsub(".*_","",match)) %>%
       mutate(match=gsub('/','',match))
              
   game_wide2 <- 
