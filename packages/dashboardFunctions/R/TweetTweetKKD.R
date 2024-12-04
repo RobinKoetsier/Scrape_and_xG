@@ -12,10 +12,10 @@
 
 TweetTweetKKD <- function(Wedstrijd = data.frame(1,1),number){
   library(twitteR)
-  consumerKey = "EMrF9z7lcwbNFrj3CM0lelsR9"
-  consumerSecret = "lACU90dZDurcnZfbt6zyLlRqALBisXV0OcfZ3fQtj0rZ8L8Dx0"
-  accessToken = "234746783-cLdroBPF86mPFZvWZ1qUEPdF5YjHbAlbdlxtvBzk"
-  accessSecret = "rDELanbzRq9jtTMadpIDME6UzNFwqzqhZMcfcOujqWOHe"
+  consumerKey = ""
+  consumerSecret = ""
+  accessToken = ""
+  accessSecret = ""
   
   setup_twitter_oauth(consumerKey,
                       consumerSecret,
